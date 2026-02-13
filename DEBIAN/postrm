@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+ENV_FILE="/etc/environment"
+MARKER="# xfce-gnome-portal-bridge"
+VAR_LINE="XDG_CURRENT_DESKTOP=GNOME"
+
+if [ "$1" = "remove" ] || [ "$1" = "purge" ]; then
+    sed -i "/$MARKER/d" "$ENV_FILE"
+    sed -i "/$VAR_LINE/d" "$ENV_FILE"
+fi

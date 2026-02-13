@@ -1,0 +1,9 @@
+Package: xfce-gnome-portal
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Depends: xdg-desktop-portal-gnome, xdg-desktop-portal, dbus-x11, dconf-gsettings-backend
+Maintainer: Meyt <contact@meyti.ir>
+Description: Seamlessly bridge GNOME proxy settings and portals into XFCE.
+ Allows Chrome and GIO apps to use system-wide proxy settings in XFCE.

@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+ENV_FILE="/etc/environment"
+VAR_LINE="XDG_CURRENT_DESKTOP=GNOME"
+MARKER="# xfce-gnome-portal-bridge"
+
+if [ "$1" = "configure" ]; then
+    # Remove any existing version of our block to prevent duplicates
+    sed -i "/$MARKER/d" "$ENV_FILE"
+    sed -i "/$VAR_LINE/d" "$ENV_FILE"
+
+    # Append the variable with a marker
+    echo "$MARKER" >> "$ENV_FILE"
+    echo "$VAR_LINE" >> "$ENV_FILE"
+fi

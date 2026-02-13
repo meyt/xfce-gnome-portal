@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+*.deb
+
+# Debian helper and temp files (if you ever use dh_make)
+debian/files
+debian/*.log
+debian/*.substvars
+debian/*.debhelper
+debian/tmp/
+debian/debhelper-build-stamp
+
+# Shell history or logs you might create while testing
+*.log

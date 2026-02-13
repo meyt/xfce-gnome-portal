@@ -1,6 +1,6 @@
 # XFCE GNOME Portal Bridge
 
-[![Build and Release .deb](https://github.com/meyt/xfce-gnome-portal/actions/workflows/release.yml/badge.svg)](https://github.com/meyt/xfce-gnome-portal/actions)
+[![Build status](https://github.com/meyt/xfce-gnome-portal/actions/workflows/build.yml/badge.svg)](https://github.com/meyt/xfce-gnome-portal/actions)
 ![Platform](https://img.shields.io/badge/platform-Debian%20%7C%20Ubuntu%20%7C%20XFCE-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 

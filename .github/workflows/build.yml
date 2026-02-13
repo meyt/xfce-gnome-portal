@@ -1,4 +1,4 @@
-name: Build and Release .deb
+name: build
 
 on:
   push:
